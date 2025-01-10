@@ -17,6 +17,7 @@ def serviceLane(n, cases, width):
         print((width[each[0]:each[1]+1]))
         results.append(min(width[each[0]:each[1]+1]))
     return results
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
