@@ -8,9 +8,9 @@ import sys
 
 # Complete the serviceLane function below.
 def serviceLane(n, cases, width):
-    print(n)
-    print(cases)
-    print(width)
+    #print(n)
+    #print(cases)
+    #print(width)
     results=[]
 
     for each in cases:
