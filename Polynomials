@@ -5,6 +5,7 @@ x = float(input())
 
 print(np.polyval(P, x))
 
+#numpy.polyval(P, x)    --- evaluates the polynomial at specified value 
 #numpy.polyint(poly)    --- indefinite integral
 #numpy.polyder(poly)    --- derivative
 #numpy.poly(poly)       --- roots to polynomial equation
