@@ -1,0 +1,26 @@
+#!/bin/python3
+
+import string
+
+alpha = string.ascii_lowercase
+
+def print_rangoli(size):
+
+    line = []
+    
+    for row in range(size):
+        to_print = "-".join(alpha[row:size])
+        line.append(to_print[::-1] + to_print[1:])
+    width = len(line[0])
+    
+    for row in range(size-1, 0, -1):
+        print(line[row].center(width, '-'))
+    
+    for row in range(size):
+        print(line[row].center(width, '-'))
+    
+    
+
+if __name__ == '__main__':
+    n = int(input())
+    print_rangoli(n)
