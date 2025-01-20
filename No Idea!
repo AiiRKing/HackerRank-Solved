@@ -1,0 +1,20 @@
+#!/bin/python3
+
+n = input().split()
+m = input().split()
+Set_A = set(input().split())
+Set_B = set(input().split())
+
+counter = 0
+
+for i in m:
+    if i in Set_A:
+        counter +=1
+    if i in Set_B:
+        counter -=1
+print(counter)
+        
+    
+
+
+
