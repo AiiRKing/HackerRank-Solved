@@ -22,10 +22,10 @@ T = sys.stdin.read().splitlines()
 T = [T[1:] if len(T)<90 else T[1:91]][0]
 
 UID = re.compile(
-    r"(?!.*(.).*\1)"
-    r"(?=^[a-zA-Z0-9]{10}$)"
-    r"(?=(.*[A-Z].*){2,})"
-    r"(?=(.*\d.*){3,})"
+    r"(?!.*(.).*\1)"            #No character should repeat.
+    r"(?=^[a-zA-Z0-9]{10}$)"    #There must be exactly 10 characters in a valid UID.
+    r"(?=(.*[A-Z].*){2,})"     #It must contain at least 2 uppercase English alphabet characters.
+    r"(?=(.*\d.*){3,})"        #It must contain at least 3 digits (0-9).
 )
 
 for line in T:
