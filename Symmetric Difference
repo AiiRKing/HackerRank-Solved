@@ -1,0 +1,10 @@
+#!/bin/python3
+
+M = input()
+set_A = set(map(int, (input().split())))
+N = input()
+set_B = set(map(int, (input().split())))
+
+result = sorted(set_A.symmetric_difference(set_B))
+
+print (*result, sep="\n")
